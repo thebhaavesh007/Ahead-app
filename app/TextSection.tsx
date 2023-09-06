@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -41,38 +39,27 @@ const TextWrapper = ({ children }: Props) => {
 function TextSection() {
   return (
     <TextSectionStyled>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
+      <TextWrapper>Mastering your life begins with mastering your emotions.</TextWrapper>
+      <TextWrapper>Emotions play a profound role in influencing our decisions and actions.</TextWrapper>
+      <TextWrapper>By understanding and managing your emotions, you can gain greater control over your life.</TextWrapper>
+      <TextWrapper>Emotional mastery involves recognizing and acknowledging your feelings.</TextWrapper>
+      <TextWrapper>It also requires the ability to regulate emotions, preventing impulsive reactions.</TextWrapper>
+      <TextWrapper>Cultivating emotional intelligence helps you build healthier relationships.</TextWrapper>
+      <TextWrapper>Emotional mastery empowers you to respond to challenges with resilience.</TextWrapper>
     </TextSectionStyled>
   );
 }
 
 const TextSectionStyled = styled.section`
   p {
-    font-size: 5rem;
+    font-size: 1.5rem; /* Increase the font size by 50% */
+    color: black; /* Set the text color to black */
+    font-weight: bold; /* Apply bold font style */
+    font-style: italic; /* Apply cursive font style */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem; /* Reduced the gap between paragraphs */
   }
 `;
 
