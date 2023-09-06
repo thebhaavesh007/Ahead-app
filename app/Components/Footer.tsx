@@ -21,17 +21,13 @@ function Footer() {
         <div className="logo-con">
           <div className="logo">
             <Image src={logo} width={36} alt="logo" />
-            <h2>Logo</h2>
+            <h2>Ahead</h2>
           </div>
           <div className="input">
             <input type="text" placeholder="Subscribe here..." />
             <button>&#8594;</button>
           </div>
-          <p>
-            Create, Sell And Collect Truly Rare Digital Artworks. Powered By
-            Blockchain Technology.
-          </p>
-          <div className="socials">
+           <div className="socials">
             <AiFillGithub />
             <AiFillTwitterCircle />
             <AiFillInstagram />
@@ -59,7 +55,7 @@ function Footer() {
         </div>
       </nav>
       <p className="rights">
-        <a href="">©2023 The Code Dealer. All rights reserved.</a>
+        <a href="">©2022  Ahead App By BHAVESH KUMAR. All rights reserved.</a>
         <a href="">Privacy policy | Terms of service</a>
       </p>
     </FooterStyled>
