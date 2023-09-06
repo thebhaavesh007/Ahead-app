@@ -2,10 +2,10 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo.png"
 import Button from "../Button/Button";
 import styled from "styled-components";
-import { FaRocket, FaWallet } from "react-icons/fa";
+import { RiDownloadCloudFill } from "react-icons/ri";
 import { Abril_Fatface } from "next/font/google";
 import hover3d from "../../utils/hover";
 
@@ -33,38 +33,41 @@ function Header() {
     <HeaderStyled ref={hero}>
       <nav>
         <div className="logo">
-          <Image src={logo} alt="logo" width={36} />
-          <h2>Logo</h2>
+          <Image src={logo} alt="logo" width={46} />
+          <h2>Ahead</h2>
         </div>
         <div className="input">
           <input type="text" placeholder="Search" />
         </div>
         <ul className="nav-items">
           <li>
-            <a href="#">Home</a>
+            <a href="#">Emotions</a>
           </li>
           <li>
-            <a href="#">Auctions</a>
+            <a href="#">Manifesto</a>
           </li>
           <li>
-            <a href="#">Marketplace</a>
+            <a href="#">Selfawareness-Test</a>
           </li>
           <li>
             <a href="#">About</a>
           </li>
-          <Button name="Connect Wallet" icon={<FaWallet />} />
+          <Button name="Download" icon={<RiDownloadCloudFill/>} />
         </ul>
       </nav>
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
-            Buy, collect, and sell extraordinary NFTs
+            Master your life by mastering emotions
           </h1>
+          <h3>EQ Beats IQ</h3>
           <p>
-            Acquire expertise in navigating the rapidly evolving and
-            exhilarating NFT landscape, unveil the highly sought-after NFTs, and
-            comprehend the possible advantages and disadvantages of acquiring,
-            amassing, and vending these exceptional digital assets.
+            People with high emotional intelligence live more fulfiled lifes. They tend to be happier
+            and have heathier relationship.
+          </p>
+          <p>They are more successfull in their pursuits and make inspiring leader. According to science they
+            earn 29K a year.
+
           </p>
           <div className="buttons">
             <Button
@@ -72,7 +75,7 @@ function Header() {
               background="#f2994a"
               color="#fff"
               border="1px solid #f2994a"
-              icon={<FaRocket />}
+              icon={<RiDownloadCloudFill />}
             />
             <Button name="Learn More" />
           </div>
@@ -86,8 +89,8 @@ function Header() {
           >
             <Image
               src="/images/monkey.png"
-              width={600}
-              height={600}
+              width={500}
+              height={500}
               alt="hero"
               style={{
                 transform: imageHover.transform,
@@ -158,7 +161,7 @@ const HeaderStyled = styled.header`
     .text-content {
       > h1 {
         font-size: clamp(2rem, 5vw, 5rem);
-        color: #f2994a;
+        color: #000;
         transition: all 0.01s linear;
         padding-bottom: 1.5rem;
       }
